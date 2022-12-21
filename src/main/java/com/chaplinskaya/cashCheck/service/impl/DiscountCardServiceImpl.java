@@ -17,7 +17,7 @@ public class DiscountCardServiceImpl implements DiscountCardService {
     public DiscountCardDto findByNumber(String number) {
         try {
             toDto(discountCardRepository.findByNumber(number));
-        } catch (Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
             System.out.println("Card number not found");
         }
